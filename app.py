@@ -38,9 +38,7 @@ def generate_response(test_data):
 
     for dataset_name in test_data.keys():
         #if dataset_name not in ['DR', 'dreaddit']:
-        #    continue
-        print(i,end='   ')
-        print("HI")
+        #    continue       
         print('Generating for dataset: {}'.format(dataset_name))
         queries, golden = test_data[dataset_name]
         goldens[dataset_name]  = golden
