@@ -45,6 +45,8 @@ def generate_response(test_data):
         responses = []
 
         for i in range(0, len(queries)):
+            print(i,end='')
+            print("HELLO")
             batch_data = queries[i]
             #print(batch_data[:2])
             inputs = tokenizer(batch_data, return_tensors="pt")
